@@ -1,0 +1,38 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+  letter-spacing: 2px;
+}
+.bgcxanh {
+  background-color: #365486;
+}
+.cxd {
+  color: #365486;
+}
+.custom-shape-divider-top-1704190116 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.custom-shape-divider-top-1704190116 svg {
+  position: relative;
+  display: block;
+  width: calc(157% + 1.3px);
+  height: 116px;
+}
+
+.custom-shape-divider-top-1704190116 .shape-fill {
+  fill: #ffff;
+}
+.bgcd {
+  background-color: #46474e;
+}
+.active {
+    display: block;
+}
+
