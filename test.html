@@ -1,19 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>jQuery Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="VwRvOvr" data-user="tr-nguyn-vn-the-animator" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-        <span>See the Pen <a href="https://codepen.io/tr-nguyn-vn-the-animator/pen/VwRvOvr">
-        Untitled</a> by trụ nguyễn văn (<a href="https://codepen.io/tr-nguyn-vn-the-animator">@tr-nguyn-vn-the-animator</a>)
-        on <a href="https://codepen.io">CodePen</a>.</span>
-      </p>
-      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+  <div class="heading">
+    <h1 class="fwb fs12">1.HTML Heading (Tiêu đề)</h1>
+    <li>Tiêu đề HTML được xác định bằng thẻ h1 đến h6</li>
+    <li>kích thước nội dung của thẻ giảm dần từ h1 đến h6</li>
+    <div class="">
+      <div class="pa15 edit" style="background-color: rgb(214, 214, 214);">
+        <div class="fs12 fwb">Ví dụ</div>
+        <div class="bgcf w1 pa15 noidung">
+          <code>&lt;h1&gt;Heading&lt;/h1&gt;</code> <br>
+          <code>&lt;h2&gt;Heading&lt;/h2&gt;</code> <br>
+          <code>&lt;h3&gt;Heading&lt;/h3&gt;</code> <br>
+        </div>
+        <button class="try-Button mt15 pa15 bra10 fwb">Hãy Tự Mình Thử</button>
+        <!-- code-edit -->
+        <div class="edit-code dn bóng b1s mt25">
+          <div class="df cf fwb" style="background-color: rgb(56, 56, 56);">
+            <div class="col-md-6 df jcsb aic">
+              <div class="df h1">
+                <div class="menuCode ptb15 tac w100  b1s cpi"><i class="fab fa-html5 plr5"></i>HTML</div>
+                <div class="menuCode ptb15 tac  w100  b1s cpi"><i class="fab fa-css3 plr5"></i>CSS</div>
+                <div class="menuCode ptb15 tac  w100  b1s cpi"><i class="fab fa-js plr5"></i>JS</div>
+              </div>
+              <div class="pa10">
+                <button onclick="run()" class="fwb bra10 cpi pa10 bgcf7h bn"><i class="fas fa-play plr5"></i>RUN</button>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="Result ptb15 tac w1 fs15">Result</div>
+            </div>
+          </div>
+          <div class="df h250  ">
+            <div class=" col-md-6 wh1">
+              <textarea id="html-code" onkeyup="run()" class="input wh1 cf bgcd pa10" spellcheck="false"><h1>Heading</h1></textarea>
+              <textarea id="css-code" onkeyup="run()" class="input wh1 cf bgcd pa10" spellcheck="false"></textarea>
+              <textarea id="js-code" onkeyup="run()" class="input wh1 cf bgcd pa10" spellcheck="false"></textarea>
+            </div>
+            <div class="col-md-6 wh1">
+              <iframe id="output" class="wh1"></iframe>
+            </div>
+          </div>
+        </div> <!-- end-editcode -->
+      </div>
+    </div>
+  </div>
 
-      <script>
-      </script>
+  <script>
+    var contentArray = ["New Heading", "New list item 1", "New list item 2"];
+
+    $(document).ready(function() {
+      $('.heading h1').text(contentArray[0]);
+      $('.heading li').each(function(index) {
+        if (index + 1 < contentArray.length) {
+          $(this).text(contentArray[index + 1]);
+        }
+      });
+    });
+  </script>
 </body>
 </html>

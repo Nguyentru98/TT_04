@@ -17,6 +17,10 @@
     <!-- icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="icon" href="assets/logo-2.jpg">
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Basic Programming</title>
 </head>
 
@@ -30,11 +34,11 @@
                     <div class="fs2 plr10">Basic Programming</div>
                 </div>
                 <div class="col-md-8 df aic">
-                    <ul class="df w1 jcsb fwb">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JAVARSCRIPT</li>
-                        <li><i class="fas fa-search fs15"></i></li>
+                    <ul class="df w1 jcsb fwb lsn">
+                        <li class="cpi cyh">HTML</li>
+                        <li class="cpi cyh">CSS</li>
+                        <li class="cpi cyh">JAVARSCRIPT</li>
+                        <li class="cpi cyh"><i class="fas fa-search fs15"></i></li>
                     </ul>
                 </div>
             </div>
@@ -161,7 +165,7 @@
                 </div>
             </div>
 
-            <div class="container mb50">
+            <div class="container mb50 ">
                 <!-- html -->
                 <div class="html ">
                     <div class="df aic jcsc ptb25">
@@ -176,61 +180,87 @@
                                 <img src="assets/cau-truc-html.png" class="w1 bra5">
                             </div>
                             <div class="col-md-6 plr25 lh2">
-                                <p>Dòng đầu tiên <strong>"!DOCTYPE html"</strong> là khai báo loại tài liệu HTML đang sử
+                                <li>Dòng đầu tiên <strong>"!DOCTYPE html"</strong> là khai báo loại tài liệu HTML đang
+                                    sử
                                     dụng. Trong trường hợp này, nó cho biết rằng tài liệu đang sử dụng phiên bản HTML5.
-                                </p>
-                                <p>Phần mở đầu tài liệu HTML bắt đầu bằng thẻ <strong>"html"</strong> . Tất cả các phần
-                                    của tài liệu sẽ được bao gồm trong cặp thẻ này.</p>
-                                <p>Tiếp theo là phần thẻ <strong>"head"</strong> nơi bạn định nghĩa các thông tin meta,
-                                    tiêu đề và các tài nguyên khác mà trình duyệt sẽ sử dụng để hiển thị trang web</p>
-                                <p><strong>UTF-8</strong> là bộ mã hóa ký tự của tài liệu, đảm bảo rằng ký tự đặc biệt
-                                    được hiển thị đúng cách</p>
-                                <p>Phần <strong>"body"</strong>chứa nội dung của toàn bộ trang web</p>
+                                </li>
+                                <li>Phần mở đầu tài liệu HTML bắt đầu bằng thẻ <strong>"html"</strong> . Tất cả các phần
+                                    của tài liệu sẽ được bao gồm trong cặp thẻ này.</li>
+                                <li>Tiếp theo là phần thẻ <strong>"head"</strong> nơi bạn định nghĩa các thông tin meta,
+                                    tiêu đề và các tài nguyên khác mà trình duyệt sẽ sử dụng để hiển thị trang web</li>
+                                <li><strong>UTF-8</strong> là bộ mã hóa ký tự của tài liệu, đảm bảo rằng ký tự đặc biệt
+                                    được hiển thị đúng cách</li>
+                                <li>Phần <strong>"body"</strong>chứa nội dung của toàn bộ trang web</li>
                             </div>
                         </div>
                     </div>
                     <!-- html basic -->
-                    <div class="">
-                        <div class="fs15 fwb cxd ptb25">HTML CĂN BẢN</div>
-                        <h1>Tiêu đề HTML</h1>
-                        <p>Tiêu đề HTML được xác định bằng thẻ h1 đến h6</p>
+                    <div class="fs15 fwb cxd ptb25">HTML CĂN BẢN</div>
+                    <div class="html-basic lh2">
+                        <div class="content-html">
+                            <div class="heading">
+                                <h1 class="fwb fs12">1.HTML Heading (Tiêu đề)</h1>
+                                <li>Tiêu đề HTML được xác định bằng thẻ h1 đến h6</li>
+                                <li> kích thước nội dung của thẻ giảm dần từ h1 đến h6</li>
+                                <div class="">
+                                    <div id="#boxEdit" class="pa15 edit" style="background-color: rgb(214, 214, 214);">
+                                        <div class="fs12 fwb">Ví dụ</div>
+                                        <div class="bgcf w1 pa15">
+                                            <code>&lt;p&gt;Paragraphs&lt;/p&gt;</code> <br>
+                                            <code>&lt;h2&gt;Heading&lt;/h2&gt;</code> <br>
+                                            <code>&lt;h3&gt;Heading&lt;/h3&gt;</code> <br>
+                                            <iframe src="" frameborder="0"></iframe>
+                                        </div>
+                                        <button class="try-Button mt15 pa15 bra10 fwb">Hãy Tự Mình Thử</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                         <!-- code-edit -->
-                        <div class="df  mt50 cf fwb" style="background-color: rgb(56, 56, 56);">
-                            <div class="col-md-6 df">
-                                <div class="menuCode ptb15 tac w100 bgcd b1s cpi"><i class="fab fa-html5 plr5"></i>HTML</div>
-                                <div class="menuCode ptb15 tac  w100 bgcd b1s cpi"><i class="fab fa-css3 plr5"></i>CSS</div>
-                                <div class="menuCode ptb15 tac  w100 bgcd b1s cpi"><i class="fab fa-js plr5"></i>JS</div>
+                        <div class="edit-code dn bóng b1s mt25 oh pa w1 t50 pf container">
+                            <div class="df cf fwb" style="background-color: rgb(56, 56, 56);">
+                                <div class="col-md-6 df jcsb aic">
+                                    <div class="df h1">
+                                        <div class="menuCode ptb15 tac w100  b1s cpi"><i
+                                                class="fab fa-html5 plr5"></i>HTML</div>
+                                        <div class="menuCode ptb15 tac  w100  b1s cpi"><i
+                                                class="fab fa-css3 plr5"></i>CSS</div>
+                                        <div class="menuCode ptb15 tac  w100  b1s cpi"><i class="fab fa-js plr5"></i>JS
+                                        </div>
+                                    </div>
+                                    <div class="pa10">
+                                        <button class="Run-code fwb bra10 cpi pa10 bgcf7h bn">
+                                            <i class="fas fa-play plr5"></i>RUN</button>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <div class="Result ptb15 tac fs15 ">Result</div>
+                                    <div class="close"><i class="far fa-times-circle pa t0 r0 fs2"></i></div>
+                                </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="Result ptb15 tac w1">Result</div>
+                            <div class="df h250  ">
+                                <div class="input-code-container col-md-6 wh1">
+                                    <textarea id="html-code" onkeyup="run()" class="input-code wh1 cf bgcd pa10"
+                                        spellcheck="false"></textarea>
+                                    <textarea id="css-code" onkeyup="run()" class="input-code wh1 cf bgcd pa10"
+                                        spellcheck="false"></textarea>
+                                    <textarea id="js-code" onkeyup="run()" class="input-code wh1 cf bgcd pa10"
+                                        spellcheck="false"></textarea>
+                                </div>
+                                <div class="col-md-6 wh1 bgcf">
+                                    <iframe id="output" class="wh1"></iframe>
+                                </div>
                             </div>
-                        </div>
-                        
-                        <div class="df h250  ">
-                            <div class=" col-md-6 wh1">
-                                <textarea id="html-code" onkeyup="run()" class="input wh1 cf bgcd pa10" spellcheck="false">
-                                    <h1>Heading</h1>
-                                    <h2>Heading</h2>
-                                    <h3>Heading</h3>
-                                    <h4>Heading</h4>
-                                    <h5>Heading</h5>
-                                    <h6>Heading</h6>
-                                </textarea>
-                                <textarea id="css-code" onkeyup="run()" class="input wh1 cf bgcd pa10" spellcheck="false"></textarea>
-                                <textarea id="js-code" onkeyup="run()" class="input wh1 cf bgcd pa10" spellcheck="false"></textarea>
-                            </div>
-                            <div class="col-md-6 wh1 ">
-                                <iframe id="output" class="wh1"></iframe>
-                            </div>
-                        </div>
+                        </div> <!-- end-editcode -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-   
 </body>
+<script src="data.js"></script>
 <script src="main.js"></script>
+
 </html>

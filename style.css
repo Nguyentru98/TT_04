@@ -2,7 +2,7 @@
   padding: 0px;
   margin: 0px;
   text-decoration: none;
-  list-style: none;
+  /* list-style: none; */
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   outline: none;
@@ -32,7 +32,22 @@
 .bgcd {
   background-color: #46474e;
 }
-.active {
-    display: block;
+.menuCode:hover {
+  background-color: #636468;
 }
-
+.toggle {
+  display: block;
+}
+.edit-code {
+  animation: editCode ease 0.6s;
+}
+@keyframes editCode {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
