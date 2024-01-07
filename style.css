@@ -6,7 +6,7 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   outline: none;
-  letter-spacing: 2px;
+
 }
 .bgcxanh {
   background-color: #365486;
@@ -25,7 +25,12 @@
   width: calc(157% + 1.3px);
   height: 116px;
 }
-
+.try-Button{
+  background-color: #3B3486;
+}
+.try-Button:hover{
+  background-color: #365486;
+}
 .custom-shape-divider-top-1704190116 .shape-fill {
   fill: #ffff;
 }
@@ -40,6 +45,7 @@
 }
 .edit-code {
   animation: editCode ease 0.6s;
+
 }
 @keyframes editCode {
   from {
@@ -50,4 +56,13 @@
     transform: translateX(0);
     opacity: 1;
   }
+}
+
+.nav-menu {
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-menu:hover {
+  position: relative;
+  transform: translateY(5px);
 }

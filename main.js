@@ -1,20 +1,46 @@
+// my HTML
 let tagHtml = myHtml.map(function (data) {
-  return `   <div class="${data.class}">
-  <h1 class="fwb fs12">${data.tieude}</h1>
-  <li>${data.noidung}</li>
-  <div class="">
-      <div id="#boxEdit" class="pa15 edit" style="background-color: rgb(214, 214, 214);">
-          <div class="fs12 fwb">Ví dụ</div>
+  let noiDung = data.noidung
+    .map(function (item) {
+      return `<li>${item}</li>`;
+    })
+    .join("");
+
+  return `
+    <div class="${data.class} ptb25">
+      <h1 class="fwb fs12">${data.tieude}</h1>
+      <ul>${noiDung}</ul>
+      <div class="">
+        <div id="#boxEdit" class="pa15 edit" style="background-color: rgb(214, 214, 214);">
+          <div class="fs12 fwb ptb10">Ví dụ</div>
           <div class="bgcf w1 pa15">            
-              <code>${data.vidu}</code>
+            <code>${data.vidu}</code>
           </div>
-          <button class="try-Button mt15 pa15 bra10 fwb">Hãy Tự Mình Thử</button>
+          <button class="try-Button mt15 pa15 bra10 fwb cf bn cpi bóng">Hãy Tự Mình Thử</button>
+        </div>
       </div>
-  </div>
-</div>`;
+    </div>`;
 });
 let htmlBasic = document.querySelector(".content-html");
 htmlBasic.innerHTML = tagHtml.join("");
+// myCSS
+let tagCss = myCss.map(function (data) {
+  return `<div class="ptb15">
+  <h1 class="fwb fs12 pb10">${data.tieuDe}</h1>
+  <li>${data.noiDung}</li>
+  <div class="ptb15">
+    <div id="#boxEdit" class="pa15 edit" style="background-color: rgb(214, 214, 214);">
+      <div class="fs12 fwb ptb10">Ví dụ</div>
+      <div class="bgcf w1 pa15">            
+        <code>${data.vidu}</code>
+      </div>
+      <button class="try-Button mt15 pa15 bra10 fwb cf bn cpi bóng">Hãy Tự Mình Thử</button>
+    </div>
+  </div>
+</div>`;
+});
+let cssBasic = document.querySelector(".css-content");
+cssBasic.innerHTML = tagCss.join("");
 
 // toggle edit code
 let editCode = document.querySelector(".edit-code");
@@ -23,14 +49,18 @@ let tryButton = document.querySelectorAll(".try-Button");
 tryButton.forEach((el, index) => {
   el.addEventListener("click", () => {
     editCode.classList.add("toggle");
-    document.querySelector('.close').addEventListener("click",()=>{
-      if(editCode.classList.contains("toggle")) {
-        editCode.classList.remove("toggle")
+    document.querySelector(".close").addEventListener("click", () => {
+      if (editCode.classList.contains("toggle")) {
+        editCode.classList.remove("toggle");
+        document.getElementById("html-code").value = "";
+        document.getElementById("css-code").value = "";
+        document.getElementById("js-code").value = "";
+        document.getElementById("output").value = "";
+        document.getElementById("output").contentDocument.body.innerHTML = "";
       }
-    })
+    });
   });
 });
-
 
 let menuCode = document.querySelectorAll(".menuCode");
 
