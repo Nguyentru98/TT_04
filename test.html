@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .active {
+            animation: myName ease 0.5s;
+        }
+
+        @keyframes myName {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(300px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Sử dụng JS để thay đổi trạng thái ban đầu của phần tử</h3>
+    <div id=myName>Nguyễn Văn Trụ</div>
+    <hr>
+    <button onclick="an()">Ẩn</button>
+    <button onclick="hien()">Hiện</button>
+    <button onclick="red()">Màu đỏ</button>
+    <button onclick="blue()">Màu xanh</button>
+    <button onclick="dichuyen()">di chuyển</button>
+    <script>
+        function dichuyen() {
+            let myName = document.getElementById("myName");
+            myName.classList.toggle("active");
+        }
+        function an() {
+            document.getElementById("myName").style.display = "none";
+        }
+        function hien() {
+            document.getElementById("myName").style.display = "inline";
+        }
+        function red() {
+            document.getElementById("myName").style.color = "red";
+        }
+        function blue() {
+            document.getElementById("myName").style.color = "blue";
+        }
+
+    </script>
+</body>
+
+</html>

@@ -66,3 +66,12 @@
   position: relative;
   transform: translateY(5px);
 }
+.back-to-top {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 1%;
+  bottom: 5%;
+  background-color: rgba(163, 151, 151, 0.5);
+  cursor: pointer;
+}

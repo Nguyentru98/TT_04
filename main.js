@@ -1,3 +1,4 @@
+
 // my HTML
 let tagHtml = myHtml.map(function (data) {
   let noiDung = data.noidung
@@ -8,7 +9,7 @@ let tagHtml = myHtml.map(function (data) {
 
   return `
     <div class="${data.class} ptb25">
-      <h1 class="fwb fs12">${data.tieude}</h1>
+      <h1 class="fwb fs12 fs1-xs">${data.tieude}</h1>
       <ul>${noiDung}</ul>
       <div class="">
         <div id="#boxEdit" class="pa15 edit" style="background-color: rgb(214, 214, 214);">
@@ -26,7 +27,7 @@ htmlBasic.innerHTML = tagHtml.join("");
 // myCSS
 let tagCss = myCss.map(function (data) {
   return `<div class="ptb15">
-  <h1 class="fwb fs12 pb10">${data.tieuDe}</h1>
+  <h1 class="fwb fs12 fs09-xs pb10">${data.tieuDe}</h1>
   <li>${data.noiDung}</li>
   <div class="ptb15">
     <div id="#boxEdit" class="pa15 edit" style="background-color: rgb(214, 214, 214);">
@@ -104,3 +105,19 @@ runCode.forEach((el) => {
     outputCode.contentWindow.eval(jsCode);
   });
 });
+// //menu
+function scrollingMenu(menuClass) {
+  const sectionMenu = document.querySelector(menuClass); 
+  window.scrollTo({
+    top: sectionMenu.offsetTop -100, 
+    behavior: "smooth",
+  });
+}
+// nut back to top
+function backToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+// show nút back top
+var lastScrollTop = 0;
+window.addEventListener("scroll", handleScroll);

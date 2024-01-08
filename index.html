@@ -25,21 +25,30 @@
 </head>
 
 <body>
+    <div onclick="backToTop()" class="back-to-top bra50 wh100 pa df jcsc aic z999">
+        <i class="fas fa-arrow-up fs2"></i>
+    </div>
     <!-- header -->
     <header>
         <div class=" bgcxanh pf w1 z9">
             <div class="container pa15 df cf">
-                <div class="logo df col-md-6 aic fwb">
+                <div class="logo df col-md-6 col-xs-6 aic fwb">
                     <div class="wh50  bgrn bgsc" style="background-image: url('assets/logo-2.jpg');"></div>
-                    <div class="fs2 plr10">Basic Programming</div>
+                    <div class="fs2 plr10 fs15-xs fs12-xs">Basic Programming</div>
                 </div>
-                <div class="col-md-6 df aic">
+                <div class="col-md-6 df aic dn-xs">
                     <ul class="df w1 jcsa fwb lsn">
-                        <li class="nav-menu cpi cyh">HTML</li>
-                        <li class="nav-menu cpi cyh">CSS</li>
-                        <li class="nav-menu cpi cyh">JAVARSCRIPT</li>
+                        <li class="nav-menu cpi cyh" onclick="scrollingMenu('.html-menu')">HTML</li>
+                        <li class="nav-menu cpi cyh" onclick="scrollingMenu('.css-menu')">CSS</li>
+                        <li class="nav-menu cpi cyh" onclick="scrollingMenu('.js-menu')">JAVARSCRIPT</li>
                         <li class="cpi cyh"><i class="fas fa-search fs15"></i></li>
                     </ul>
+                </div>
+                <div class="menu-mb dn db-xs col-md-6 col-xs-6 ">
+                    <div class="df jcfe h1 aic fs2 cpi">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -58,8 +67,8 @@
         <div class="container">
             <!-- Giới Thiệu -->
             <div class="lh2 ptb25">
-                <div class="fs2 fwb cxd tac">GIỚI THIỆU</div>
-                <div class="fs13">
+                <div class="fs2 fs15-xs fwb cxd tac">GIỚI THIỆU</div>
+                <div class="fs13 fs1-xs plr15-xs">
                     <p>
                         Trong thời buổi công nghệ hiện đại như hiện nay thì 'Website' chắc không còn xa lạ với bạn ,bạn
                         có
@@ -71,8 +80,8 @@
             </div>
 
             <!-- website là gì ? -->
-            <div class="lh2 ptb25">
-                <div class="fs15 fwb cxd">website là gì ?</div>
+            <div class="lh2 ptb25 plr15-xs">
+                <div class="fs15 fs12-xs fwb cxd">website là gì ?</div>
                 <div class="">
                     <p>
                         Website là tập hợp các trang chứa thông tin bao gồm văn bản, hình ảnh, video, dữ liệu,… nằm trên
@@ -85,38 +94,47 @@
                 </div>
             </div>
             <!-- Thành phần của website -->
-            <div class="lh2 ptb25">
-                <div class="fs15 fwb cxd pb15"> Công nghệ nào sử dụng để tạo ra website ?</div>
-                <div class="df bóng bra15">
-                    <div class="col-md-4  df fdc pa15">
+            <div class="lh2 ptb25 plr15-xs">
+                <div class="fs15 fs12-xs fwb cxd pb15"> Công nghệ nào sử dụng để tạo ra website ?</div>
+                <div class="df bóng bra15 fww">
+                    <div class="col-md-3 col-xs-12 df fdc pa15">
                         <div class="bgsc bgrn bgpc pb21 bra15" style="background-image: url('assets/card-html.jpg');">
                         </div>
                         <div class="tac ptb15 fsi">
-                            <h1 class="fs15">Hypertext Markup Language</h1>
+                            <h1 class="fs15 fs1-xs">Hypertext Markup Language</h1>
                             <span>(Ngôn ngữ đánh dấu siêu văn bản)</span>
                         </div>
                     </div>
-                    <div class="col-md-4  df fdc pa15 ">
+                    <div class="col-md-3 col-xs-12 df fdc pa15 ">
                         <div class="bgsc bgrn bgpc pb21 bra15" style="background-image: url('assets/card-css.png');">
                         </div>
                         <div class="tac ptb15 fsi">
-                            <h1 class="fs15">Cascading Style Sheets</h1>
+                            <h1 class="fs15 fs1-xs">Cascading Style Sheets</h1>
                             <span>(Ngôn ngữ tạo phong cách)</span>
                         </div>
                     </div>
-                    <div class="col-md-4  df fdc pa15">
+                    <div class="col-md-3 col-xs-12 df fdc pa15">
                         <div class="bgsc bgrn bgpc pb21 bra15" style="background-image: url('assets/card-js.jpg');">
                         </div>
                         <div class="tac ptb15 fsi">
-                            <h1 class="fs15">JavaScript</h1>
+                            <h1 class="fs15 fs1-xs">JavaScript</h1>
                             <span>(Ngôn ngữ lập trình)</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-12 df fdc pa15 ">
+                        <div class="bgso bgrn bgpc pb21 bra15"
+                            style="background-image: url('https://images.viblo.asia/b04140e3-bfb9-4e4b-8d0e-4c84c56bebda.png');">
+                        </div>
+                        <div class="tac ptb15 fsi">
+                            <h1 class="fs15 fs1-xs">IDE</h1>
+                            <span>(Trình soạn thảo mã nguồn)</span>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- ví dụ minh họa -->
-            <div class="ptb25">
-                <div class="fs15 cxd tac pb15">
+            <div class="ptb25 plr15-xs">
+                <div class="fs15 fs12-xs cxd tac pb15">
                     <h1>Ví dụ minh họa</h1>
                 </div>
                 <div class="df">
@@ -136,6 +154,10 @@
                     </div>
 
                 </div>
+                <div class="vscode">
+                    <div class="fwb fs15 ptb10 fs1-xs">Trình Soạn thảo mã nguồn vsCode</div>
+                    <img src="assets/vs-code.png" alt="">
+                </div>
             </div>
         </div>
         <!-- công nghệ-->
@@ -151,15 +173,15 @@
                 </div>
             </div>
 
-            <div class="container mb50 ">
+            <div class="container plr15-xs">
                 <!-- html -->
-                <div class="html ">
-                    <div class="df aic jcsc ptb25">
+                <div class="html html-menu">
+                    <div class="df aic jcsc ptb25 ">
                         <i class="fab fa-html5 fs3" style=" color:#ff0900;"></i>
-                        <h1 class="fs2 plr10 cxd">Hypertext Markup Language</h1>
+                        <h1 class="fs2 plr10 cxd fs12-xs">Hypertext Markup Language</h1>
                     </div>
                     <div class="">
-                        <h1 class="fs15 ptb15 cxd">HTML là gì ?</h1>
+                        <h1 class="fs15 fs1-xs ptb15 cxd">HTML là gì ?</h1>
                         <p><strong>HTML</strong> là một ngôn ngữ đánh dấu được sử dụng để xây dựng và định dạng nội dung
                             trên trang web. HTML được sử dụng để tạo ra cấu trúc và tổ chức các phần tử trên trang web,
                             bao gồm tiêu đề, đoạn văn bản, hình ảnh, liên kết, bảng, form, video và nhiều phần tử khác.
@@ -167,12 +189,12 @@
                     </div>
 
                     <div class="ptb25">
-                        <div class="fs15 fwb cxd ptb15">CẤU TRÚC CỦA MỘT FILE HTML</div>
-                        <div class="df">
-                            <div class="col-md-6 oh">
+                        <div class="fs15 fs12-xs fwb cxd ptb15">CẤU TRÚC CỦA MỘT FILE HTML</div>
+                        <div class="df fww">
+                            <div class="col-md-6 col-xs-12 oh">
                                 <img src="assets/cau-truc-html.png" class="w1 bra5">
                             </div>
-                            <div class="col-md-6 lh2 pl15">
+                            <div class="col-md-6 col-xs-12 lh2 pl15">
                                 <li>Dòng đầu tiên <strong>"!DOCTYPE html"</strong> là khai báo loại tài liệu HTML đang
                                     sử
                                     dụng. Trong trường hợp này, nó cho biết rằng tài liệu đang sử dụng phiên bản HTML5.
@@ -190,10 +212,10 @@
                     <!-- html basic -->
 
                     <div class="html-basic lh2 ptb25">
-                        <div class="fs15 fwb cxd tac">HTML CĂN BẢN</div>
+                        <div class="fs15 fs12-xs fwb cxd tac">HTML CĂN BẢN</div>
                         <div class="content-html">
                             <div class="heading">
-                                <h1 class="fwb fs12">1.HTML Heading (Tiêu đề)</h1>
+                                <h1 class="fwb fs12 fs1-xs">1.HTML Heading (Tiêu đề)</h1>
                                 <li>Tiêu đề HTML được xác định bằng thẻ h1 đến h6</li>
                                 <li> kích thước nội dung của thẻ giảm dần từ h1 đến h6</li>
                                 <div class="">
@@ -211,55 +233,59 @@
                         </div>
                         <!-- code-edit -->
                         <div class="edit-code dn bóng b1s mt25 oh pa w1 t50 pf container">
-                            <div class="df cf fwb" style="background-color: rgb(56, 56, 56);">
-                                <div class="col-md-6 df jcsb aic">
-                                    <div class="df h1">
-                                        <div class="menuCode ptb15 tac w100  b1s cpi"><i
-                                                class="fab fa-html5 plr5"></i>HTML</div>
-                                        <div class="menuCode ptb15 tac  w100  b1s cpi"><i
-                                                class="fab fa-css3 plr5"></i>CSS</div>
-                                        <div class="menuCode ptb15 tac  w100  b1s cpi"><i class="fab fa-js plr5"></i>JS
+                            <div class="df fwb b1s" style="background-color: rgb(56, 56, 56);">
+                                <div class="col-md-6 col-xs-12">
+                                    <div class="df b1s h60">
+                                        <div class="df w50 cf">
+                                            <div class="menuCode ptb15 tac w100  b1s cpi"><i
+                                                    class="fab fa-html5 plr5"></i>HTML
+                                            </div>
+                                            <div class="menuCode ptb15 tac  w100  b1s cpi"><i
+                                                    class="fab fa-css3 plr5"></i>CSS
+                                            </div>
+                                            <div class="menuCode ptb15 tac  w100  b1s cpi"><i
+                                                    class="fab fa-js plr5"></i>JS
+                                            </div>                                         
+                                        </div>
+                                        <div class="pa10 w50 tar ">
+                                            <button class="Run-code fwb bra10 cpi pa10 bgcf7h bn">
+                                                <i class="fas fa-play plr5"></i>RUN</button>
                                         </div>
                                     </div>
-                                    <div class="pa10">
-                                        <button class="Run-code fwb bra10 cpi pa10 bgcf7h bn">
-                                            <i class="fas fa-play plr5"></i>RUN</button>
-
+                                    <div class="oh h250 ">
+                                        <textarea id="html-code" class="input-code w1 bgcd pa10 h250 cf"
+                                            spellcheck="false"></textarea>
+                                        <textarea id="css-code" class="input-code w1 bgcd pa10 h250 cf"
+                                            spellcheck="false"></textarea>
+                                        <textarea id="js-code" class="input-code w1 bgcd pa10 h250 cf"
+                                            spellcheck="false"></textarea>                                      
                                     </div>
                                 </div>
-                                <div class="col-md-6 ">
-                                    <div class="Result ptb15 tac fs15 ">Result</div>
-                                    <div class="close cf df pa t0 r0  aic">
-                                        <i class="fas fa-window-close fs3"></i>
+                                <div class="col-md-6 dn-xs">
+                                    <div class="b1s h60 df aic h1 jcsc">
+                                        <div class="Result fs15 cf">Result</div>
+                                        <div class="close cf df pa t0 r0  aic">
+                                            <i class="fas fa-window-close fs3"></i>
+                                        </div>
+                                    </div>
+                                    <div class="h250">
+                                        <iframe id="output" class="wh1 bgcf"></iframe>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="df h250  ">
-                                <div class="input-code-container col-md-6 wh1">
-                                    <textarea id="html-code" class="input-code wh1 cf bgcd pa10"
-                                        spellcheck="false"></textarea>
-                                    <textarea id="css-code" class="input-code wh1 cf bgcd pa10"
-                                        spellcheck="false"></textarea>
-                                    <textarea id="js-code" class="input-code wh1 cf bgcd pa10"
-                                        spellcheck="false"></textarea>
-                                </div>
-                                <div class="col-md-6 wh1 bgcf">
-                                    <iframe id="output" class="wh1"></iframe>
-                                </div>
-                            </div>
+                            </div>                         
                         </div> <!-- end-editcode -->
                     </div>
                 </div>
                 <!-- Css -->
-                <div class="css mtb50">
+                <div class=" mtb50 css-menu">
                     <div class="df aic jcsc ptb25">
                         <i class="fab fa-css3 fs3" style="color: #525CEB;"></i>
-                        <h1 class="fs2 plr10 cxd">Hypertext Markup Language</h1>
+                        <h1 class="fs2 fs12-xs plr10 cxd ">Cascading Style Sheets</h1>
                     </div>
                     <div class="content container">
                         <!-- css là gì -->
                         <div class="ptb15">
-                            <h1 class="fs15 ptb15 cxd">CSS là gì ?</h1>
+                            <h1 class="fs15 fs12-xs ptb15 cxd">CSS là gì ?</h1>
                             <p>
                                 <strong>CSS</strong> là một ngôn ngữ đánh dấu được sử dụng để mô tả cách trình bày và
                                 trình diễn các phần tử trên trang web. CSS được sử dụng để kiểm soát các thuộc tính như
@@ -271,9 +297,9 @@
                         </div>
                         <!-- cách sử dụng css -->
                         <div class="ptb15">
-                            <h1 class="fs15 cxd">Các cách sử dụng Css</h1>
+                            <h1 class="fs15 fs12-xs cxd">Các cách sử dụng Css</h1>
                             <div class="ptb15">
-                                <h2 class="fs13 ptb10">External CSS (ngoại tuyến)</h2>
+                                <h2 class="fs13 fs09-xs ptb10">External CSS (ngoại tuyến)</h2>
                                 <li>Đây là cách thông dụng và tốt nhất để sử dụng CSS. Bạn tạo một tệp CSS riêng biệt
                                     (ví dụ: mystyle.css) và sau đó liên kết nó với trang HTML bằng thẻ
                                     <strong><code>&lt;link&gt;</code></strong>
@@ -285,7 +311,7 @@
                             </div>
 
                             <div class="ptb15">
-                                <h2 class="fs13 ptb10">Internal CSS (nội bộ)</h2>
+                                <h2 class="fs13 fs09-xs ptb10">Internal CSS (nội bộ)</h2>
                                 <li class="ptb10">Bạn có thể đặt CSS trực tiếp trong thẻ
                                     <strong><code>&lt;style&gt;</code></strong> bên trong phần
                                     <strong><code>&lt;head&gt;</code></strong> của trang "HTML".
@@ -294,7 +320,7 @@
                             </div>
 
                             <div class="ptb15">
-                                <h2 class="fs13 ptb10">Inline CSS (nội tuyến)</h2>
+                                <h2 class="fs13 fs09-xs ptb10">Inline CSS (nội tuyến)</h2>
                                 <li class="ptb10">Bạn có thể áp dụng CSS trực tiếp vào các phần tử HTML bằng cách sử
                                     dụng thuộc tính <strong>"style"</strong> </li>
                                 <img src="assets/css-inline.png" alt="" class="w1">
@@ -302,7 +328,7 @@
                         </div>
                         <!-- một số css căn bản -->
                         <div class="">
-                            <h1 class="fs15 cxd">Một số thuộc tính cơ bản CSS</h1>
+                            <h1 class="fs15 fs12-xs cxd">Một số thuộc tính cơ bản CSS</h1>
                             <div class="css-content">
                                 <!-- myCss -->
                             </div>
@@ -310,53 +336,129 @@
                     </div>
                 </div>
                 <!-- JS -->
-                <div class="js">
+                <div class="js-menu">
                     <div class="df aic jcsc ptb25">
                         <i class="fab fa-js fs3" style="color: rgb(205, 182, 50);"></i>
                         <h1 class="fs2 plr10 cxd">JavaScript</h1>
                     </div>
                     <div class="ptb15 ">
-                        <h1 class="fs15 ptb10 cxd fwb">JavaScript là gì ?</h1>
-                        <p><strong>JavaScript</strong> là một ngôn ngữ lập trình,JavaScript có thể được nhúng trực tiếp vào mã HTML của trang web và thực thi trên trình duyệt của người dùng. Nó cung cấp các chức năng và tính năng cho phép tương tác với các phần tử HTML, thay đổi nội dung và kiểu dáng, xử lý sự kiện, gửi và nhận dữ liệu từ máy chủ và nhiều hơn nữa.</p>
+                        <h1 class="fs15 fs1-xs ptb10 cxd fwb">JavaScript là gì ?</h1>
+                        <p><strong>JavaScript</strong> là một ngôn ngữ lập trình,JavaScript có thể được nhúng trực tiếp
+                            vào mã HTML của trang web và thực thi trên trình duyệt của người dùng. Nó cung cấp các chức
+                            năng và tính năng cho phép tương tác với các phần tử HTML, thay đổi nội dung và kiểu dáng,
+                            xử lý sự kiện, gửi và nhận dữ liệu từ máy chủ và nhiều hơn nữa.</p>
                     </div>
-                    <div class="content-js">       
+                    <div class="content-js">
                         <div class="">
-                            <h1 class="fs13 fwb ptb15 cxd">Biến là gì?</h1>
-                            <li>Biến là một khái niệm quan trọng trong lập trình. Nó là một vùng bộ nhớ được dành riêng để lưu trữ và đại diện cho một giá trị hoặc một tập hợp các giá trị. Trong một chương trình, bạn có thể khai báo biến để lưu trữ và thao tác với dữ liệu.</li>
-                            <li>Mỗi biến có một tên định danh duy nhất để xác định và truy cập nó trong mã. Bạn có thể gán giá trị cho biến và sau đó sử dụng giá trị đó trong các phép tính, so sánh, hiển thị hoặc thực hiện các thao tác khác.</li>
+                            <h1 class="fs13 fwb ptb15 cxd fs1-xs">Biến là gì?</h1>
+                            <li>Biến là một khái niệm quan trọng trong lập trình. Nó là một vùng bộ nhớ được dành riêng
+                                để lưu trữ và đại diện cho một giá trị hoặc một tập hợp các giá trị. Trong một chương
+                                trình, bạn có thể khai báo biến để lưu trữ và thao tác với dữ liệu.</li>
+                            <li>Mỗi biến có một tên định danh duy nhất để xác định và truy cập nó trong mã. Bạn có thể
+                                gán giá trị cho biến và sau đó sử dụng giá trị đó trong các phép tính, so sánh, hiển thị
+                                hoặc thực hiện các thao tác khác.</li>
                         </div>
                         <div class="">
-                            <h1 class="fs13 fwb ptb15 cxd">Khai báo biến,hàm</h1>
+                            <h1 class="fs13 fwb ptb15 cxd fs1-xs">Khai báo biến,hàm</h1>
                             <h1>Cách đặt tên biến</h1>
                             <li>Bắt đầu bằng ký tự hoặc kí tự gạch dưới _ .</li>
                             <li>Không chứa các kí tự đặc biệt như & * ( , ).</li>
                             <li>không được bắt đầu bằng số.</li>
                             <img src="assets/vidu-kbb.png" alt="" class="ptb10 w1">
                             <h1>Cách khai báo</h1>
-                            <li><strong>let: </strong> khai báo từ khóa này giúp cho biến chỉ có thể được truy xuất bên trong vùng chọn nó</li>
-                            <li><strong>var:</strong> biến được khai báo với từ khóa var sẽ được truy cập ở bất kể đâu trong chương trình.</li>
-                            <li><strong>const:</strong> được dùng để khai báo hằng số, giá trị của nó không thay đổi xuyên suốt chương trình.</li>
+                            <li><strong>let: </strong> khai báo từ khóa này giúp cho biến chỉ có thể được truy xuất bên
+                                trong vùng chọn nó</li>
+                            <li><strong>var:</strong> biến được khai báo với từ khóa var sẽ được truy cập ở bất kể đâu
+                                trong chương trình.</li>
+                            <li><strong>const:</strong> được dùng để khai báo hằng số, giá trị của nó không thay đổi
+                                xuyên suốt chương trình.</li>
+                        </div>
+                        <div class="kieuDl pt15">
+                            <div class="cxd fs15 fwb ptb25">Kiểu Dữ Liệu</div>
+                            <table border="1" cellpadding="10px" style="border-collapse: collapse;width: 100%;">
+                                <tbody>
+                                    <tr>
+                                        <th>Kiểu dữ liệu</th>
+                                        <th>Khái niệm</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="tac">string</td>
+                                        <td class="pa10">Trong JavaScript, các dữ liệu thuộc kiểu string (hay còn được gọi là "chuỗi") là một tập hợp gồm các ký tự, chúng được viết bên trong cặp dấu nháy kép hoặc cặp dấu nháy đơn.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tac">number</td>
+                                        <td class="pa10">Các dữ liệu thuộc kiểu number (hay còn được gọi là "số") là một tập hợp của các con số (0 - 9) không chứa dấu khoảng trắng và có thể chứa dấu trừ (-) nằm ở đầu để đại diện cho số âm.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tac">boolean</td>
+                                        <td class="pa10">
+                                            các dữ liệu thuộc kiểu boolean chỉ có thể nhận một trong hai giá trị, đó là:
+                                            <ul>
+                                                <li>true (đúng)</li>
+                                                <li>false (sai)</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tac">object</td>
+                                        <td class="pa10">Các dữ liệu thuộc kiểu object (hay còn được gọi là "đối tượng") là một tập hợp gồm những cái tên và mỗi cái tên sẽ chứa đựng một giá trị dữ liệu.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tac">undefined</td>
+                                        <td class="pa10">Khi một biến được khai báo mà không gán giá trị thì biến đó sẽ có giá trị là undefined và kiểu dữ liệu cũng là undefined.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tac">array</td>
+                                        <td class="pa10">
+                                            array còn được gọi là mảng, nó là một trường hợp đặc biệt của đối tượng.
+                                            Mảng là một loại biến đặc biệt có thể lưu trữ nhiều giá trị đồng thời, mỗi giá trị được gọi là một phần tử mảng.
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="toantu pt15">
+                            <div class="cxd fs15 fwb ptb25">Toán Tử</div>
+                            <img src="assets/cac-loai-toan-tu-so-hoc-trong-javascript.jpg" class="w1">
                         </div>
                         <div class="vidu">
-                            <div class="ptb15">                              
+                            <div class="ptb15">
                                 <div class="ptb15">
-                                  <div id="#boxEdit" class="pa15 edit" style="background-color: rgb(214, 214, 214);">
-                                    <div class="fs12 fwb ptb10">Ví dụ JS</div>
-                                    <div class="bgcf w1 pa15">            
-                                        <iframe height="300" style="width: 100%;" scrolling="no" title="JS" src="https://codepen.io/tr-nguyn-vn-the-animator/embed/vYPGryZ?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                                            See the Pen <a href="https://codepen.io/tr-nguyn-vn-the-animator/pen/vYPGryZ">
-                                            JS</a> by trụ nguyễn văn (<a href="https://codepen.io/tr-nguyn-vn-the-animator">@tr-nguyn-vn-the-animator</a>)
-                                            on <a href="https://codepen.io">CodePen</a>.
-                                          </iframe>
+                                    <div id="#boxEdit" class="pa15 edit" style="background-color: rgb(214, 214, 214);">
+                                        <div class="fs12 fwb ptb10">Ví dụ JS</div>
+                                        <div class="bgcf w1 pa15">
+                                            <iframe height="300" style="width: 100%;" scrolling="no" title="JS"
+                                                src="https://codepen.io/tr-nguyn-vn-the-animator/embed/vYPGryZ?default-tab=html%2Cresult"
+                                                frameborder="no" loading="lazy" allowtransparency="true"
+                                                allowfullscreen="true">
+                                                See the Pen <a
+                                                    href="https://codepen.io/tr-nguyn-vn-the-animator/pen/vYPGryZ">
+                                                    JS</a> by trụ nguyễn văn (<a
+                                                    href="https://codepen.io/tr-nguyn-vn-the-animator">@tr-nguyn-vn-the-animator</a>)
+                                                on <a href="https://codepen.io">CodePen</a>.
+                                            </iframe>
+                                        </div>
+                                        <button class="try-Button mt15 pa15 bra10 fwb cf bn cpi bóng">Hãy Tự Mình
+                                            Thử</button>
                                     </div>
-                                    <button class="try-Button mt15 pa15 bra10 fwb cf bn cpi bóng">Hãy Tự Mình Thử</button>
-                                  </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="footer h100 df jcsc aic fdc" style="border-top: 1px solid rgb(133, 131, 131);">
+        <div class="footer-icon fs15">
+            <i class="fab fa-facebook plr15" style="color: #125fe2;"></i>
+            <i class="fab fa-youtube plr15" style="color: #ce1c40;"></i>
+            <i class="fas fa-envelope plr15" style="color: #7c65d7;"></i>
+        </div>
+        <div class="footer-logo ptb15">
+            <span>
+                Since 2023 - Powered by Trụ Nguyễn
+            </span>
         </div>
     </div>
 </body>
